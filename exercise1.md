@@ -1,0 +1,7 @@
+## CI Practices and Considerations in Python Development
+
+In the Python ecosystem, there are a few commonly utilized tools for linting, testing, and building. For example, you can use Pylint or Ruff for linting and Pytest for testing. These tools are relatively easy to set up to run automatically in a CI environment, such as GitHub Actions. While a separate build tool is not necessarily needed in all Python projects, you could, for example, use Poetry for building and dependency management.
+
+Jenkins and GitHub Actions are commonly used options for a CI setup. For Jenkins, there are various alternatives available, such as CircleCI's self-hosted server option. You can also host runners on local machines with GitHub Actions and GitLab CI/CD. BitBucket Cloud and CircleCI's cloud-based service could be good alternatives for GitHub Actions if a cloud-based CI/CD setup is preferred.
+
+Choosing between a cloud-based or a self-hosted CI setup could depend on various factors. For smaller projects, a cloud-based option can be more beneficial, for example, due to its quick setup, and the team can easily scale resources to meet their needs as these are often pay-as-you-go models. Meanwhile, a self-hosted option offers more flexibility and control, thus it can be better for larger projects. Yet, in addition to the scale of the application, the final choice may depend on many other considerations, such as the technical expertise of the team and the available resources.
